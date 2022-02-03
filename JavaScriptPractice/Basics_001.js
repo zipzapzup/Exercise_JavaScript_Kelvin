@@ -11,11 +11,29 @@ let y = 10;
 // 2. VAR
 // 3. CONST
 
-// LET is block-scoped
-// LET: Is a method to declare variables, which is block scoped that is bounded by {}. A variable that is declared in block with `let` is only available in use within block.
+// COMPARISON:
+//  LET             VAR
+//  Block {}        Function ()
+//  No redeclare    ReDeclare
+//  No              Global Objects
+for (var i = 0; i < 5; i++) {
+    console.log("VAR Inside Loop:", i);
+} 
 
-// VAR is function scope
-// VAR: Let you define a variables and reuse the variables, throughtout your code blocks. It is generally loaded under the hoisintg rule, Where all Var command are loaded first into memory before function execution. Hoisting rules states that all declaration are loaded first before runtime, this menas that var's positioning affect how it is declared. Avoid VAR
+
+for (var i = 0;i < 5; i++){
+    console.log("VAR Inside Loop:", i);
+}
+console.log("VAR outside loop: ", i)
+
+// LET is block-scoped {}
+// LET: Is a method to declare variables, which is block scoped that is bounded by {}. A variable that is declared in block with `let` is only available in use within block.
+// LET cannot be re-declared, however the value is mutable. 
+
+// VAR is function scope (hoisting)
+// VAR: Let you define a variables and reuse the variables, throughtout your code blocks. It is generally loaded under the hoisintg rule, Where all Var command are loaded first into memory before function execution. Hoisting rules states that all declaration are loaded first before runtime, this menas that var's positioning affect how it is declared. 
+// When used in global scoped, VAR becomes global variable.
+// VAR can be re-declared. Act like a global variable.
 
 // CONST is a variable that is constant and cannot be changed
 // CONST: When declaring a CONST, the value cannot be re-declared or re-assigned. This means that an object that is declared as a CONST is immutable, its properties cannot be changed.
@@ -36,10 +54,13 @@ const myConstant = 101;
 
 console.log(typeof(x))
 
-// NUMBER
+// NUMBERS
 // In javascript, you can define a number as a fraction, decimals, negative and even zero
 // Number can be defined with Hex, Binary types as well
-// NaN is not a number - error when you multiple number with not a number
+// NaN defines as not a number - error when you multiple number with not a number
+// Infinity is when the number goes into infinity 10 / 0 
+// All number values are stored as 64 bit floating points. Big numbers are accurate to 15 decimals.
+// Don't compare decimals. Use math.round as it is inaccurate.
 
 let num1 = -30;
 let num2_hex = 0x2A; // Hexadecimal numbers starts with 0x
