@@ -54,7 +54,7 @@ const myConstant = 101;
 
 console.log(typeof(x))
 
-// NUMBERS
+// 1. NUMBERS
 // In javascript, you can define a number as a fraction, decimals, negative and even zero
 // Number can be defined with Hex, Binary types as well
 // NaN defines as not a number - error when you multiple number with not a number
@@ -67,6 +67,28 @@ let num2_hex = 0x2A; // Hexadecimal numbers starts with 0x
 let num3_bin = 0b10101; // Binary numbers
 let num4_octal = 0o52; // Octal numbers
 let num5_scien = 6e7; // Scientific numbers: 6* 10^7 - sixty million
+
+
+
+// 2. STRING
+// String is defined by putting quotes.
+// String has the following native methods
+// - str.charAt(1)
+// - str.length
+// Using backtick allow you to do string substitution
+// Backslash is used as an escape function
+
+
+let string1 = 'Hello!' + ' Hi';
+let string2 = 'Hello2!';
+let sentence = `${string1} John`;
+let string3 = 'I\'m';
+console.log("String: ", string1, string2)
+console.log(typeof string1)
+
+// 3. BOOLEAN
+// 
+
 
 console.log(x + y)
 console.log(z, myVar, myConstant)
