@@ -98,3 +98,5 @@ let bool1 = 5 < 2; // false - not it is possible to use greater than function to
 
 //CONTROL FLOW 3:FOR Statements
 //
+//
+//
