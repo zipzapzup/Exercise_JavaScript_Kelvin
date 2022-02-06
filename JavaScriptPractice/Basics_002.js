@@ -175,3 +175,27 @@ switch(answer) {
         break;
 }
 
+// CONTROL FLOW 7: Ternary operators
+// An operator to execute of many if statements in a shorter way.
+let ternary = true ? console.log("Execute when True"): console.log("Execute when false");
+
+
+// VAR and LET is on different scope
+function myFunction(){
+    var x = "function scoped!";
+    let y = "block scoped!";
+    console.log(x);
+    console.log(y);
+}
+
+myFunction();
+
+// console.log(x) VAR IS Function scoped, since the var is only available inside the function. Outside the function, x is not defined and running this command console.log9x) will show error.
+
+// Note that an if statement is not a function.
+
+if (true){
+    var z = 'variable z still exists outside since if is not a function';
+    console.log(z);
+}
+console.log(z)
