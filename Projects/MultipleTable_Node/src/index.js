@@ -1,4 +1,5 @@
 import { createMultiplicationTable } from './generateTable.js';
+import process from 'process';
 
 let args = process.argv.slice(2);
 
