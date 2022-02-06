@@ -60,9 +60,9 @@ let result31 = Obj2 === Obj3; // true as it is referenced the same.
 // If statements is a control flow operator, which will execute the block code {} if it is true. You can use comparison operator to get boolean which will show the results.
 // Format of IF statements are as follow
 if (true) {
-    continue
-} else if {
-    continue
+    
+} else if (true ) {
+    
 };
 
 // Note that there are a few variations on Boolean. You can use comparison operators or straight on empty values as false.
@@ -100,3 +100,78 @@ let bool1 = 5 < 2; // false - not it is possible to use greater than function to
 //
 //
 //
+// A) FOR Loop
+for (let i = 0; i < 5; i++) {
+    console.log(i)
+};
+
+// B) FOR OF
+// Loop through each item of the array
+let loop1 = 'abc';
+for (let i of loop1) {
+    console.log(i)
+}
+
+// C) FOR IN 
+// Loop through each key of an object.
+let person = {
+    name: "John",
+    age: 30,
+    interests: ['music','food']
+}
+
+// D) FOR EACH
+// Loop through each object and you can pass in a function
+arr = [1,2,3]
+arr.forEach( function(x){console.log(x);});
+
+// CONTROL FLOW 4: WHILE Statements
+// 2 types of while loop
+// A) While Loop 
+// B) Do-While
+// These 2 while loop is different in that the while loop checks the condition at the start, whereas the do while loop check conditions at the end.
+let cond1 = true;
+let cond2 = 0;
+while (cond1) {
+    if (cond2 == 5){
+        cond1 = false;
+    }
+    console.log("While Loop:", cond2)
+    cond2++
+}
+
+do {
+    console.log("DO-WHILE LOOP")
+} while (false);
+
+// CONTROL FLOW 5: Handling Errors TRY statements
+// Try Statement is used when you need to anticipate some errors.
+// Normally, you would need to use a try statements when you are dealing with network requests, or file which the outcome of the requests is undefinite and can fail.
+
+try {
+    // code
+    throw "AHA, you met an ERROR!"
+} catch (err) { // err is a variable on the error message
+    console.log(err)
+} finally {
+    console.log("Finally always execute Regardless of Error")
+    // what to do finally
+}
+
+// Note that you have situtation where you can throw your own errors, and that is you can use a throw statement to throw your own errors. This throw will become the error variable.
+
+// CONTROL FLOW 6: Switch Case
+// Switch is used when you have multiple case, rather than lots of if statement.
+
+let answer = 'a';
+
+switch(answer) {
+    case "a":
+        // 
+        break;
+    case "b":
+        break;
+    case "c":
+        break;
+}
+
