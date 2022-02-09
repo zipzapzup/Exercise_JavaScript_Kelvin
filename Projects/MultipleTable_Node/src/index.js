@@ -16,3 +16,7 @@ if (!isNaN(rows) && !isNaN(columns)) {
 } else {
     console.log('Error: Invalid input')
 }
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
