@@ -5,7 +5,7 @@
   "main": "node.js",
   "type": "module",
   "scripts": {
-    "start": "npx babel-node src/node.js",
+    "start": "npx nodemon --exec \"npx babel-node ./src/node.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +14,8 @@
   "dependencies": {
     "@babel/core": "^7.17.2",
     "@babel/node": "^7.16.8",
-    "express": "^4.17.2"
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
   }
 }
