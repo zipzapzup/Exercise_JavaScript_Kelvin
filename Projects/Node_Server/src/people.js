@@ -1,0 +1,22 @@
+export let people = [
+    {
+        name: "Mike",
+        age: 20,
+        hobby: "Soccer"
+    },
+    {
+        name: "Jake",
+        age: 30,
+        hobby: "Basketball"
+    },
+    {
+        name: "Elle",
+        age: 25,
+        hobby: "Dancing"
+    },
+    {
+        name: "Michele",
+        age: 20,
+        hobby: "Cooking"
+    }
+]
