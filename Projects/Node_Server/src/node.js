@@ -78,4 +78,4 @@ app.post('/people', (request, response) => {
     console.log("POST Requests Received ", i)
 });
 
-// Node what to do add the JSON object and Write to FILE.
+// Node what to do: add the JSON object and Write to FILE.
