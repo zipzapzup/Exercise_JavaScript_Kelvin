@@ -4,7 +4,8 @@
   "description": "",
   "main": "fibonaci.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "say-hello": "node ./hello.js",
+    "fibo": "node ./fibonaci.js 10"
   },
   "author": "",
   "license": "ISC",
