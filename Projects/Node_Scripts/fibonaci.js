@@ -27,3 +27,9 @@ function Fibo(numbers){
 };
 
 console.log(Fibo(args));
+
+function hello(){
+    console.log("HELLo");
+}
+
+module.exports = hello;
